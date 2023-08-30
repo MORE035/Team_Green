@@ -10,11 +10,11 @@
 		<classes>
 			<class name="org.sap.tests.OrangeHrmTests" />
 			<class name="org.sap.tests.AmazonDemoTest" />
-
+			<class name="org.sap.tests.GuruLoginTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	
+
 </suite> <!--
 Suite -->
   
