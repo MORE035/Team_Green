@@ -7,7 +7,7 @@ browser=chrome
 #if yes report will have name with "index.html"
 overridereports=yes
 #passed step screenshot -->yes or no
-passedstepscreenshot=yes
+passedstepscreenshot=no
 
 #Failed step screenshot -->yes or no
 failedstepscreenshot=yes
