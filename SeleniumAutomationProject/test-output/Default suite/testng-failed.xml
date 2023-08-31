@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.exercise.docker.ExecuteTestsInDocker">
+      <class name="org.sap.tests.GuruLoginTest">
         <methods>
-          <include name="localTestDataProvider" invocation-numbers="0 1 2 3"/>
+          <include name="setUp"/>
+          <include name="loginValidCredentials"/>
+          <include name="tearDown"/>
+          <include name="loginInvalidCredentials"/>
         </methods>
-      </class> <!-- org.exercise.docker.ExecuteTestsInDocker -->
+      </class> <!-- org.sap.tests.GuruLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

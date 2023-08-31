@@ -18,11 +18,29 @@ public class GuruLoginTest extends BaseTest{
 	public void loginValidCredentials(Map<String,String>data) {
 		GTPLBankLoginPage gblp=new GTPLBankLoginPage();
 	//	String actualTitle=gblp.enterUserName(data.get("username")).enterUserPassword(DecodeUtils.getDecoderString(data.get("passowrd"))).clickButton().getTitle();
-		String actualTitle=gblp.enterUserName(data.get("username")).enterUserPassword(data.get("passowrd")).clickButton().getTitle();
+		String actualTitle=gblp.enterUserName(data.get("username")).enterUserPassword(data.get("passowrd")).clickLoginButton().getTitle();
 		Assertions.assertThat(actualTitle)
 		.isNotBlank()
 		.isNotEmpty()
 		.isEqualToIgnoringCase("GTPL Bank Manager HomePage")
 		.containsIgnoringCase("GTPL");
+	}
+	
+	@FrameWorkAnnotation(category = {CategoryType.REGRESSION}, autherName = { AuthorNames.JAYESH })
+	@Test
+	public void loginInvalidCredentials(Map<String,String>data) {
+		GTPLBankLoginPage gblp=new GTPLBankLoginPage();
+	//	String actualTitle=gblp.enterUserName(data.get("username")).enterUserPassword(DecodeUtils.getDecoderString(data.get("passowrd"))).clickButton().getTitle();
+		
+		
+		gblp.enterUserName(data.get("username")).enterUserPassword(data.get("passowrd")).clickLoginButton();
+		
+		
+		
+		String actualAlertMessage=gblp.handleAlert();
+		Assertions.assertThat(actualAlertMessage)
+		.isNotBlank()
+		.isNotEmpty()
+		.isEqualToIgnoringCase("User is not valid");
 	}
 }

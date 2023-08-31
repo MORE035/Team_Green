@@ -11,8 +11,8 @@
       <class name="org.sap.tests.GuruLoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginValidCredentials" invocation-numbers="0 1"/>
           <include name="tearDown"/>
+          <include name="loginInvalidCredentials"/>
         </methods>
       </class> <!-- org.sap.tests.GuruLoginTest -->
     </classes>

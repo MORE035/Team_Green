@@ -19,9 +19,16 @@ public class GTPLBankLoginPage extends BasePage {
 		return this;
 	}
 
-	public GTPLBankHomePage clickButton() {
+	public GTPLBankHomePage clickLoginButton() {
 		click(buttonLoginBy, WaitStrategy.CLICKBLE, "Button");
 		return new GTPLBankHomePage();
+	}
+	
+	
+	public String handleAlert() {
+		
+	return	getAlertText(WaitStrategy.PRESENCE);
+		
 	}
 
 }

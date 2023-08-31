@@ -14,5 +14,6 @@ public class GTPLBankHomePage extends BasePage {
 			return getPageTitle();
 
 		}
+		
 
 }

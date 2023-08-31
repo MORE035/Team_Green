@@ -1,5 +1,6 @@
 package org.sap.factories;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,4 +28,19 @@ public final class ExpliciteWaitFactory {
 		return element;
 	}
 
+
+	public static Alert performExplicteWait(WaitStrategy waitStrategy) {
+
+		Alert alert =null;
+
+		if(waitStrategy == WaitStrategy.PRESENCE) {
+
+			alert = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitwait())
+					.until(ExpectedConditions.alertIsPresent());
+			return alert;
+		}else if(waitStrategy == WaitStrategy.NONE) {
+			return alert;
+		}
+		return alert;
+	}
 }
