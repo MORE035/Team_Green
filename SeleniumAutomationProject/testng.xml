@@ -11,6 +11,7 @@
 			<class name="org.sap.tests.OrangeHrmTests" />
 			<class name="org.sap.tests.AmazonDemoTest" />
 			<class name="org.sap.tests.GuruLoginTest" />
+			<class name="org.sap.tests.GuruNewCustomerTest"></class>		
 		</classes>
 	</test> <!--
 	Test -->
