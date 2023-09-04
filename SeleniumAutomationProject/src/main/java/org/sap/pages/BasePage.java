@@ -2,6 +2,7 @@ package org.sap.pages;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sap.constants.FrameworkConstants;
@@ -65,7 +66,14 @@ public class BasePage {
 			return "No alert is Present";
 		}
 	}
-	
+	public void handlingAdds(By patrentFrame,By childFrame,By dismissbtn) {
+		WebElement parentWebElement = DriverManager.getDriver().findElement(patrentFrame);
+		DriverManager.getDriver().switchTo().frame(parentWebElement);
+		WebElement childWebElement = DriverManager.getDriver().findElement(childFrame);
+		DriverManager.getDriver().switchTo().frame(childWebElement);
+		DriverManager.getDriver().findElement(dismissbtn).click();
+		DriverManager.getDriver().switchTo().defaultContent();
+	}
 	
 	private void explicitlyWaitForElementToBeClickble(By by) {
 		new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitwait())

@@ -1,6 +1,7 @@
 package org.sap.pages;
 
 import org.openqa.selenium.By;
+import org.sap.driver.DriverManager;
 import org.sap.enums.WaitStrategy;
 
 public class GTPLNewCustomerPage extends BasePage{
@@ -21,7 +22,9 @@ public class GTPLNewCustomerPage extends BasePage{
 	private final By EmailIdTextBoxBy = By.xpath("//input[@name='emailid']");
 
 	private final By SubmitButtonBy = By.xpath("//input[@type='submit']");
-
+	private final By parentIframeBy=By.xpath("//iframe[@id='google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0']");
+	private final By childIframeBy=By.xpath("//iframe[@id='ad_iframe']");
+	private final By dismissButtonBy=By.id("dismiss-button");
 
 
 
@@ -82,10 +85,12 @@ public class GTPLNewCustomerPage extends BasePage{
 		return this;
 	}
 	
+	public GTPLNewCustomerPage dismissAdds() {
+		if(DriverManager.getDriver().findElement(parentIframeBy).isDisplayed()) {
+		handlingAdds(parentIframeBy,childIframeBy,dismissButtonBy);
+		
+		}
+		return this;
+	}
 	
-	
-	
-	
-	
-
 }

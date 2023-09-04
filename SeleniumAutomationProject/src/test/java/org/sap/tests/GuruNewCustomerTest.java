@@ -19,9 +19,9 @@ public class GuruNewCustomerTest extends BaseTest{
 	{
 		GTPLBankLoginPage gblp=new GTPLBankLoginPage();
 		GTPLNewCustomerPage gbcp=
-		gblp.enterUserName(data.get("username")).enterUserPassword(data.get("passowrd")).clickLoginButton().clickNewCustomerLink();
+		gblp.enterUserName(data.get("username")).enterUserPassword(data.get("passowrd")).clickLoginButton().clickNewCustomerLink().dismissAdds();
 		
-		gbcp.enterCustomerName(data.get("CustomerName")).clickRadioBtn(data.get("gender")).enterCustomerAddress(data.get("Address")).enterCustomercity(data.get("City"))
+		gbcp.enterCustomerName(data.get("CustomerName")).clickRadioBtn(data.get("gender")).enterDOB("05052000").enterCustomerAddress(data.get("Address")).enterCustomercity(data.get("City"))
 		.enterCustomerState(data.get("State")).enterCustomerPinNum(data.get("PinNum")).enterCustomerTelePhoneNum(data.get("TelephoneNum"))
 		.enterCustomerEmailId(data.get("EmailId")).clickSubmitButton();
 		

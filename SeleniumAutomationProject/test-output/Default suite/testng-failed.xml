@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.sap.tests.GuruLoginTest">
+      <class name="org.sap.tests.GuruNewCustomerTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginValidCredentials"/>
+          <include name="AddNewCustomer"/>
           <include name="tearDown"/>
-          <include name="loginInvalidCredentials"/>
         </methods>
-      </class> <!-- org.sap.tests.GuruLoginTest -->
+      </class> <!-- org.sap.tests.GuruNewCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
