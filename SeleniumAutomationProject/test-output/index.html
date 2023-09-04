@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.sap.tests.GuruNewCustomerTest" class="method navigator-link" hash-for-method="AddNewCustomer({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer,...)">AddNewCustomer({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer,...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.sap.tests.GuruLoginTest" class="method navigator-link" hash-for-method="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg...)">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.sap.tests.GuruLoginTest" class="method navigator-link" hash-for-method="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro,...)">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.sap.tests.GuruLoginTest" class="method navigator-link" hash-for-method="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, ...)">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,24 +128,116 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.sap.tests.GuruNewCustomerTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">org.sap.tests.GuruLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddNewCustomer({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer,...)">
-                  </a> <!-- AddNewCustomer({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer,...) -->
-                  <span class="method-name">AddNewCustomer</span>
-                  <span class="parameters">({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer, execute=yes, passowrd=AjebytE, PinNum=534001, TelephoneNum=9876543210, DOB=05052000, State=Karnataka, browser=chrome, CustomerName=Devi, items=, faname=Devi, username=mngr525014})</span>
+                  <a name="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg...)">
+                  </a> <!-- loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg...) -->
+                  <span class="method-name">loginInvalidCredentials</span>
+                  <span class="parameters">({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg, PinNum=, TelephoneNum=, DOB=, State=, browser=chrome, CustomerName=, items=, faname=jayesh, username=ghowoj})</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=116.0.5845.141): User is not valid
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MOREVASANTHKUMA&apos;, ip: &apos;172.26.96.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SPUGE\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f454513e42ee6d829d2920c55356093e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.sap.reports.ExtentLogger.base64Image(ExtentLogger.java:52)
+	at org.sap.reports.ExtentLogger.pass(ExtentLogger.java:29)
+	at org.sap.pages.BasePage.click(BasePage.java:20)
+	at org.sap.pages.GTPLBankLoginPage.clickLoginButton(GTPLBankLoginPage.java:23)
+	at org.sap.tests.GuruLoginTest.loginInvalidCredentials(GuruLoginTest.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Add New Customer Details)                  </em>
+(log in with Invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro,...)">
+                  </a> <!-- loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro,...) -->
+                  <span class="method-name">loginInvalidCredentials</span>
+                  <span class="parameters">({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro, PinNum=, TelephoneNum=, DOB=, State=, browser=chrome, CustomerName=, items=, faname=jayesh, username=slgjlj})</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=116.0.5845.141): User is not valid
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MOREVASANTHKUMA&apos;, ip: &apos;172.26.96.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SPUGE\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa80b1108d7eb97c6225aeb12a5d83f0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.sap.reports.ExtentLogger.base64Image(ExtentLogger.java:52)
+	at org.sap.reports.ExtentLogger.pass(ExtentLogger.java:29)
+	at org.sap.pages.BasePage.click(BasePage.java:20)
+	at org.sap.pages.GTPLBankLoginPage.clickLoginButton(GTPLBankLoginPage.java:23)
+	at org.sap.tests.GuruLoginTest.loginInvalidCredentials(GuruLoginTest.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(log in with Invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, ...)">
+                  </a> <!-- loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, ...) -->
+                  <span class="method-name">loginInvalidCredentials</span>
+                  <span class="parameters">({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, PinNum=, TelephoneNum=, DOB=, State=, browser=chrome, CustomerName=, items=, faname=jayesh, username=ksgnks})</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=116.0.5845.141): User is not valid
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MOREVASANTHKUMA&apos;, ip: &apos;172.26.96.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SPUGE\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bc9b6c52805eb8a1a5e77c81147610a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.sap.reports.ExtentLogger.base64Image(ExtentLogger.java:52)
+	at org.sap.reports.ExtentLogger.pass(ExtentLogger.java:29)
+	at org.sap.pages.BasePage.click(BasePage.java:20)
+	at org.sap.pages.GTPLBankLoginPage.clickLoginButton(GTPLBankLoginPage.java:23)
+	at org.sap.tests.GuruLoginTest.loginInvalidCredentials(GuruLoginTest.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(log in with Invalid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -196,16 +298,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddNewCustomer')
-data.setCell(0, 2, 'org.sap.tests.GuruNewCustomerTest')
-data.setCell(0, 3, 8381);
+data.setCell(0, 1, 'loginInvalidCredentials')
+data.setCell(0, 2, 'org.sap.tests.GuruLoginTest')
+data.setCell(0, 3, 1751);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginInvalidCredentials')
+data.setCell(1, 2, 'org.sap.tests.GuruLoginTest')
+data.setCell(1, 3, 1642);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginInvalidCredentials')
+data.setCell(2, 2, 'org.sap.tests.GuruLoginTest')
+data.setCell(2, 3, 1583);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -245,18 +355,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.sap.tests.GuruNewCustomerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.sap.tests.GuruLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp([{EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer...)</span>
+                <span class="method-name">setUp([{EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfs...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">AddNewCustomer({EmailId=123@gmail.com, gender=Female, Address=Marathahalli, City=Banglore, testname=AddNewCustomer,...)</span>
-                <span class="method-start">6144 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=49hjfsg...)</span>
+                <span class="method-start">5919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14706 ms</span>
+                <span class="method-start">8837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro...)</span>
+                <span class="method-start">9400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=slgjro,...)</span>
+                <span class="method-start">13907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16655 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf,...)</span>
+                <span class="method-start">17261 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInvalidCredentials({EmailId=, gender=, Address=, City=, testname=loginInvalidCredentials, execute=yes, passowrd=sgnsf, ...)</span>
+                <span class="method-start">21975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24819 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
